@@ -10,7 +10,7 @@
 
 注2：该工程运行前提是有指定明确的时钟Pin输入（或是FPGA内部产生的时钟，自行修改top.sv代码）
 
-注3：测试Altera、国产器件等FPGA时，可能需要在设置中将复用IO改为regular IO以通过布线
+注3：测试Altera、国产器件等FPGA时，可能需要在设置中将复用IO改为regular IO以通过布线（部分Pin不推荐复用，如reconfig_n等，测试文件未使用）
 
 注4：Altera的部分IO为CLK_IN，不可输出，类似的GTP的IO也无法通过串口输出
 
@@ -59,3 +59,5 @@
 241003：V2.2 增加EP4CE6_10F17同定义的U17，Readme补充相关说明
 
 241003：V3.0 添加Altera 10CL055Y_ZF484系列
+
+241003：V4.0 添加Gowin GW2A_AR-LV18QN88系列，已上板测试
