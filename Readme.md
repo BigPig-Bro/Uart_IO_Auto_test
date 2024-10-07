@@ -12,7 +12,7 @@
 
 注3：测试Altera、国产器件等FPGA时，可能需要在设置中将复用IO改为regular IO以通过布线（部分Pin不推荐复用，如reconfig_n等，测试文件未使用）
 
-注4：Altera的部分IO为CLK_IN，不可输出，类似的GTP的IO也无法通过串口输出
+注4：Altera的部分IO为CLK_IN，不可输出，类似的GTP的IO、Xilinx ZYNQ的MIO、DDR等也无法通过串口输出
 
 注5：部分FPGA型号PIN定义相同，采用下划线表示，如EP4CE6_10F17_U17代表EP4CE6F17\EP4CE6U17\EP4CE10F17\EP4CE10U17四种型号
 
@@ -63,3 +63,5 @@
 241003：V4.0 添加Gowin GW2A_AR-LV18QN88系列，已上板测试
 
 241003：V5.0 添加AGM AG1280Q48 、AG1280Q32、AG10KL144_H，并移除EP4CE6_10E22系列DCLK引脚
+
+241007：V6.0 添加Xilinx 7010/20_CLG400/484系列，测试了7Z020CLG484、暂时关闭了时钟引脚输入验证
